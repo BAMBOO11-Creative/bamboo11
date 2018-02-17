@@ -1,0 +1,18 @@
+<div class="logo">
+    <h1>{{content.html.title}}</h1>
+    <img src="images/bamboo11-logo.svg">
+</div>
+
+<nav>
+
+    <ul>
+
+        {{#each content.navigation as |item|}}
+
+            <li {{action 'navigate' item}}>{{item.title}}</li>
+
+        {{/each}}
+
+    </ul>
+
+</nav>

@@ -1,0 +1,74 @@
+.bm-slide {
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    position: relative;
+
+    .background {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .container {
+
+        display: flex;
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 100vh;
+        padding: 10em;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .content {
+
+            align-self: center;
+
+            h2 {
+
+            }
+
+            p {
+
+            }
+
+            h2 + p {
+                margin-top: 1em;
+            }
+
+            button {
+                margin-top: 1em;
+                border: 2px solid white;
+                background: none;
+                border-radius: 1.5rem;
+                padding-left: 3em;
+                padding-right: 3em;
+                line-height: 3rem;
+                text-transform: uppercase;
+            }
+
+            button:hover {
+                color: black;
+                background: white;
+            }
+
+        }
+
+    }
+
+}

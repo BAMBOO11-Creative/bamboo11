@@ -1,0 +1,25 @@
+//
+
+body {
+
+    color: white;
+    font-size: 18px;
+
+    @include tablet {
+		font-size: 15px;
+	}
+
+    @include mobile {
+		font-size: 13px;
+	}
+
+}
+
+h1, h2, h3, p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-size: 5em;
+}

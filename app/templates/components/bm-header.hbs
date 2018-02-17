@@ -9,7 +9,10 @@
 
         {{#each content.navigation as |item|}}
 
-            <li {{action 'navigate' item}}>{{item.title}}</li>
+            <li {{action 'navigate' item}} active={{item.active}}>
+                <span>{{item.title}}</span>
+                <span></span>
+            </li>
 
         {{/each}}
 

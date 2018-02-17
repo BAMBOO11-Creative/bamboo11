@@ -32,12 +32,42 @@
         ul {
 
             li {
+
                 text-transform: uppercase;
                 float: left;
                 padding-left: 1em;
                 padding-right: 1em;
                 padding-top: 1em;
                 padding-bottom: 1em;
+
+                span {
+                    display: inline-block;
+                    float: left;
+                    clear: both;
+                }
+
+                span:first-child {
+                    line-height: 1;
+                }
+
+                span:last-child {
+                    width: 0px;
+
+                    height: 1px;
+                    margin-top: 4px;
+                    background: white;
+                }
+
+            }
+
+            li[active] {
+
+                span:last-child {
+
+                    width: 100%;
+
+                }
+
             }
 
         }

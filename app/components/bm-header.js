@@ -8,7 +8,9 @@ export default Component.extend({
     actions: {
 
         navigate(item) {
-            
+
+            item.set('active', true);
+
         }
 
     }

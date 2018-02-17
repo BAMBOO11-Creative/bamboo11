@@ -2,6 +2,8 @@ import Service from '@ember/service';
 import config from 'ember-get-config';
 import fetch from 'fetch';
 import { inject } from '@ember/service';
+import ArrayProxy from '@ember/array/proxy';
+import Object from '@ember/object';
 
 export default Service.extend({
 
@@ -14,7 +16,15 @@ export default Service.extend({
         const data = await this.load('content.json');
 
         this.set('html', data.html);
-        this.set('navigation', data.navigation);
+
+        this.set('navigation', ArrayProxy.create({ content:
+
+            data.navigation.map(function(object) {
+                return Object.create(object);
+            })
+
+        }));
+
         this.set('projects', data.projects);
         this.set('people', data.people);
         this.set('slides', data.slides);

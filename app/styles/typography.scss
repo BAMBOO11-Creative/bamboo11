@@ -52,5 +52,11 @@ h1, h2, h3 {
 }
 
 h2 {
+
     font-size: 5em;
+
+    @include mobile {
+		font-size: 3em;
+	}
+
 }

@@ -9,6 +9,11 @@
     padding-top: 2em;
     width: 100%;
 
+    @include mobile {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+	}
+
     .logo {
 
         display: inline-block;
@@ -20,6 +25,12 @@
 
         img {
             float: left;
+
+            @include mobile {
+                width: 2em;
+                height: auto;
+        	}
+
         }
 
     }
@@ -40,6 +51,10 @@
                 padding-top: 1em;
                 padding-bottom: 1em;
 
+                @include mobile {
+                    padding: 0.5em;
+            	}
+
                 span {
                     display: inline-block;
                     float: left;
@@ -52,7 +67,6 @@
 
                 span:last-child {
                     width: 0px;
-
                     height: 1px;
                     margin-top: 4px;
                     background: white;

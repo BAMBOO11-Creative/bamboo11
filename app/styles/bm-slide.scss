@@ -35,6 +35,10 @@
         justify-content: flex-start;
         align-content: flex-start;
 
+        @include mobile {
+			padding: 2em;
+		}
+
         .content {
 
             align-self: center;

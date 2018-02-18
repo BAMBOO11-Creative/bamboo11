@@ -10,7 +10,7 @@ export default Route.extend({
 
 	title(tokens) {
 
-        return this.content.get('html.title');
+        return this.content.get('html.title') + " - " + this.content.get('html.tagline');
 
 	},
 

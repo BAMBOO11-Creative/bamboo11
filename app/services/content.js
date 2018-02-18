@@ -66,11 +66,14 @@ export default Service.extend({
         var object = { method: 'GET', };
 
         // URL
-        var url = config.APP.content + path;
+        var url = path;
+        if ( config.APP.endpoint ) {
+            url = config.APP.endpoint + path;
+        }
 
         const response = await fetch( url, object );
         const result = await response.json();
-
+        
         if ( response.status < 200 || response.status >= 300 ) {
             throw result;
         }

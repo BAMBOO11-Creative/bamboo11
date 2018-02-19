@@ -10,8 +10,9 @@
     width: 100%;
 
     @include mobile {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
 	}
 
     .logo {
@@ -27,7 +28,7 @@
             float: left;
 
             @include mobile {
-                width: 2em;
+                width: 1.5rem;
                 height: auto;
         	}
 
@@ -39,6 +40,13 @@
     nav {
 
         float: right;
+        margin-left: -1em;
+        margin-right: -1em;
+
+        @include mobile {
+            margin-left: -0.5em;
+            margin-right: -0.5em;
+        }
 
         ul {
 
@@ -50,9 +58,14 @@
                 padding-right: 1em;
                 padding-top: 1em;
                 padding-bottom: 1em;
+                margin-top: -1em;
+                letter-spacing: 3px;
 
                 @include mobile {
-                    padding: 0.5em;
+                    padding: 0.4rem;
+                    margin-top: -0.4rem;
+                    letter-spacing: 2px;
+                    font-size: 0.875em;
             	}
 
                 span {

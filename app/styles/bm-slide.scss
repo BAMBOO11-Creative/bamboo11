@@ -7,6 +7,7 @@
     float: left;
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .background {
 
@@ -17,6 +18,7 @@
         height: 100%;
 
         img {
+            float: right;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -31,12 +33,22 @@
         float: left;
         width: 100%;
         min-height: 100vh;
-        padding: 10em;
+        padding: 8em;
         justify-content: flex-start;
         align-content: flex-start;
 
+        @include tablet {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+		}
+
         @include mobile {
-			padding: 1.5em;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+			padding-left: 3.5rem;
+            padding-right: 3.5rem;
 		}
 
         .content {
@@ -48,7 +60,9 @@
             }
 
             p {
-
+                @include mobile {
+                    font-size: 0.875rem;
+                }
             }
 
             h2 + p {
@@ -56,14 +70,23 @@
             }
 
             button {
+
                 margin-top: 1em;
                 border: 2px solid white;
                 background: none;
-                border-radius: 1.5rem;
-                padding-left: 3em;
-                padding-right: 3em;
+                padding-top: 2px;
+                border-radius: 4rem;
+                padding-left: 2em;
+                padding-right: 2em;
                 line-height: 3rem;
                 text-transform: uppercase;
+                letter-spacing: 3px;
+
+                @include mobile {
+                    line-height: 2rem;
+                    font-size: 0.875rem;
+            	}
+
             }
 
             button:hover {

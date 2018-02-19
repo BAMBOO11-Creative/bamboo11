@@ -1,0 +1,29 @@
+<div class="background">
+    <img src="{{content.endpoint}}images/bamboo-purple.svg">
+</div>
+
+<div class="container">
+
+    <div class="content">
+
+        <div class="header">
+            <h2>{{{model.title}}}</h2>
+            <p>{{{model.description}}}</p>
+        </div>
+
+        <div class="list">
+
+            {{#each model.list as |item|}}
+
+                <div class="item">
+                    <h3>{{item.title}}</h3>
+                    <p>{{{item.description}}}</p>
+                </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</div>

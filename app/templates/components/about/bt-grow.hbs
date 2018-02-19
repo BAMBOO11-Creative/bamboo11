@@ -1,5 +1,9 @@
 <div class="background">
-    <img src={{model.background}}>
+    {{#if media.isMobile}}
+        <img src="{{content.endpoint}}images/grow-mobile.jpg">
+    {{else}}
+        <img src="{{content.endpoint}}images/grow-desktop.jpg">
+    {{/if}}
 </div>
 
 <div class="container">

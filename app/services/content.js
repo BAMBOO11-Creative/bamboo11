@@ -11,6 +11,12 @@ export default Service.extend({
 
     //
 
+    endpoint: Ember.computed(function() {
+        return config.APP.endpoint;
+    }),
+
+    //
+
     async model() {
 
         const data = await this.load('content.json');
@@ -73,7 +79,7 @@ export default Service.extend({
 
         const response = await fetch( url, object );
         const result = await response.json();
-        
+
         if ( response.status < 200 || response.status >= 300 ) {
             throw result;
         }

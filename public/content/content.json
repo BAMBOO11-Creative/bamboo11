@@ -30,35 +30,30 @@
         {
             "reference":"About",
             "component": "about/bt-content",
-            "background": "http://localhost:9999/content/images/content-desktop.jpg",
             "title": "We believe<br>content<br>is king",
             "description": "To be at the top of the food chain,<br>content needs to be powerful,<br>relatable and relevant,<br>that’s why our content roars!"
         },
         {
             "reference":"About",
             "component": "about/bt-box",
-            "background": "http://localhost:9999/content/images/box-desktop.jpg",
             "title": "We don’t think<br>outside the box",
             "description": "We believe there is no box. just breakthrough ideas.<br>We don’t rehash. Our creative process is designed<br>for game-changing innovation."
         },
         {
             "reference":"About",
             "component": "about/bt-clients",
-            "background": "http://localhost:9999/content/images/clients-desktop.jpg",
             "title": "We are<br>your trusted<br>wingman",
             "description": "Our clients are the heroes, period. we are made to be exceptional sidekicks.<br>Empathy is on our dna, that’s why clients will never walk alone again."
         },
         {
             "reference":"About",
             "component": "about/bt-think",
-            "background": "http://localhost:9999/content/images/think-desktop.jpg",
-            "title": "We are a creative think tank<br>that fuels our own<br>production house",
+            "title": "We are a creative think tank<br>that fuels our own <br>production house",
             "description": "What better way to deliver powerful ideas than to execute them ourselves?<br>Our clients invest in the work, not the overhead."
         },
         {
             "reference":"About",
             "component": "about/bt-grow",
-            "background": "http://localhost:9999/content/images/grow-desktop.jpg",
             "title": "Let’s grow<br>great things<br>together",
             "button": "Services"
         },
@@ -100,6 +95,24 @@
             "reference":"About",
             "component": "about/bt-people",
             "title": "Meet the pandas"
+        },
+        {
+            "reference":"Contact",
+            "component": "contact/ct-contact",
+            "title": "Ready foraction?",
+            "description": "Drop us a line,<br> We are ready when you are!",
+            "email": {
+                "title": "Email Us",
+                "description": "<a href='mailto:contact@bamboo11.com'>contact@bamboo11.com</a>"
+            },
+            "phone": {
+                "title": "Call Us",
+                "description": "<a href='tel:+17865349077'>+(1) 786.534.9077</a>"
+            },
+            "address": {
+                "title": "Visit Us",
+                "description": "<a href='https://www.google.ae/maps/place/U.S.+Century+Bank/@25.795425,-80.338442,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b96c1c6d2dd1:0x55f2d171745b51!8m2!3d25.795425!4d-80.336248?hl=en' target='_blank'>2301 NW 87th Avenue<br>Suite 500 - 504<br>Miami, FL 33172<br>U.S.A.</a>"
+            }
         }
     ]
 }

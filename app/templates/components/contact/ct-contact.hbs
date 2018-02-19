@@ -1,0 +1,39 @@
+<div class="background">
+    {{#if media.isMobile}}
+        <img src="{{content.endpoint}}images/contact-mobile.jpg">
+    {{else}}
+        <img src="{{content.endpoint}}images/contact-desktop.jpg">
+    {{/if}}
+</div>
+
+<div class="container">
+
+    <div class="content">
+
+        <div class="header">
+            <h2>{{{model.title}}}</h2>
+            <p>{{{model.description}}}</p>
+        </div>
+
+        <div class="list">
+
+            <div class="item">
+                <h3>{{model.email.title}}</h3>
+                <p>{{{model.email.description}}}</p>
+            </div>
+
+            <div class="item">
+                <h3>{{model.phone.title}}</h3>
+                <p>{{{model.phone.description}}}</p>
+            </div>
+
+            <div class="item">
+                <h3>{{model.address.title}}</h3>
+                <p>{{{model.address.description}}}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

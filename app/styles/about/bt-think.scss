@@ -1,3 +1,13 @@
 .bt-think {
 
+    .content {
+
+        @include mobile {
+            br {
+                display: none;
+            }
+		}
+
+    }
+
 }

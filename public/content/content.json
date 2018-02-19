@@ -1,0 +1,118 @@
+{
+    "html": {
+        "title": "Bamboo11",
+        "tagline": "We are your trusted wingman",
+        "description": "",
+        "keywords": ""
+    },
+    "navigation": [
+        { "title": "About" },
+        { "title": "Services" },
+        { "title": "Projects" },
+        { "title": "Contact" }
+    ],
+    "projects": [
+
+    ],
+    "people": [
+        {
+            "id": "saray-chhambbat",
+            "name":"Saray Chhambbat",
+            "title": "Head of Communications"
+        },
+        {
+            "id": "saray-chhambbat",
+            "name":"Saray Chhambbat",
+            "title": "Head of Communications"
+        }
+    ],
+    "slides": [
+        {
+            "reference":"About",
+            "component": "about/bt-content",
+            "title": "We believe<br>content<br>is king",
+            "description": "To be at the top of the food chain,<br>content needs to be powerful,<br>relatable and relevant,<br>that’s why our content roars!"
+        },
+        {
+            "reference":"About",
+            "component": "about/bt-box",
+            "title": "We don’t think<br>outside the box",
+            "description": "We believe there is no box. just breakthrough ideas.<br>We don’t rehash. Our creative process is designed<br>for game-changing innovation."
+        },
+        {
+            "reference":"About",
+            "component": "about/bt-clients",
+            "title": "We are<br>your trusted<br>wingman",
+            "description": "Our clients are the heroes, period. we are made to be exceptional sidekicks.<br>Empathy is on our dna, that’s why clients will never walk alone again."
+        },
+        {
+            "reference":"About",
+            "component": "about/bt-think",
+            "title": "We are a creative think tank<br>that fuels our own <br>production house",
+            "description": "What better way to deliver powerful ideas than to execute them ourselves?<br>Our clients invest in the work, not the overhead."
+        },
+        {
+            "reference":"About",
+            "component": "about/bt-grow",
+            "title": "Let’s grow<br>great things<br>together",
+            "button": "Services"
+        },
+        {
+            "reference":"Services",
+            "component": "services/sr-services",
+            "title": "Our services",
+            "description": "From page to screen, we got you covered! we are a content agency that owns<br>a full production house... that means we have the talent and the tools to turn dreams into reality.",
+            "list": [
+                {
+                    "title": "Production",
+                    "description": "Full video, live events, and activations production house. Budgeting, logistics, recording, editing, color grading."
+                },
+                {
+                    "title": "Brand Management",
+                    "description": "Strategy and communication planning. Multi-market research + media guidelines."
+                },
+                {
+                    "title": "Creative",
+                    "description": "Conceptualization, central communication and toolbox generation."
+                },
+                {
+                    "title": "Digital",
+                    "description": "On-line, social and rich media development and management."
+                },
+                {
+                    "title": "Social",
+                    "description": "12-month custom made content plan development. Video and photo assets for all social media platforms."
+                }
+            ]
+        },
+        {
+            "reference":"Projects",
+            "component": "work/wr-work",
+            "title": "Our work",
+            "description": "We believe in keeping great company. It makes for fascinating stories,<br>unforgettable moments, and ground-breaking ideas."
+        },
+        {
+            "reference":"About",
+            "component": "about/bt-people",
+            "title": "Meet the pandas"
+        },
+        {
+            "reference":"Contact",
+            "component": "contact/ct-contact",
+            "title": "Ready foraction?",
+            "description": "Drop us a line,<br> We are ready when you are!",
+            "email": {
+                "title": "Email Us",
+                "description": "<a href='mailto:contact@bamboo11.com'>contact@bamboo11.com</a>"
+            },
+            "phone": {
+                "title": "Call Us",
+                "description": "<a href='tel:+17865349077'>+(1) 786.534.9077</a>"
+            },
+            "address": {
+                "title": "Visit Us",
+                "description": "<a href='https://www.google.ae/maps/place/U.S.+Century+Bank/@25.795425,-80.338442,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b96c1c6d2dd1:0x55f2d171745b51!8m2!3d25.795425!4d-80.336248?hl=en' target='_blank'>2301 NW 87th Avenue<br>Suite 500 - 504<br>Miami, FL 33172<br>U.S.A.</a>"
+            }
+        }
+    ]
+}

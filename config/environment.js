@@ -10,7 +10,7 @@ module.exports = function(environment) {
         locationType: 'auto',
 
         APP: {
-            endpoint: "http://localhost:9999/content/",
+            endpoint: "http://localhost:9999/assets/content/",
         },
 
         fastboot: {
@@ -33,7 +33,7 @@ module.exports = function(environment) {
      if (environment === 'production') {
 
          //ENV.APP.endpoint = "http://staging.bamboo11.com/content/";
-          ENV.APP.endpoint = "https://bamboo11.herokuapp.com/content/";
+          ENV.APP.endpoint = "https://bamboo11.herokuapp.com/assets/content/";
 
      }
 

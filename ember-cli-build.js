@@ -10,6 +10,10 @@ module.exports = function(defaults) {
             browsers: ['last 2 versions']
         },
 
+        fingerprint: {
+            exclude: ['content/images'],
+        },
+
         'ember-cli-babel': {
             includePolyfill: true
         },

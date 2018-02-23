@@ -1,7 +1,7 @@
-import Component from '@ember/component';
+import Component from './bt-slide';
 
 export default Component.extend({
 
-    classNames: ['bm-people'],
+    classNames: ['bt-people'],
 
 });

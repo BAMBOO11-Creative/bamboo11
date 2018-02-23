@@ -12,21 +12,6 @@
         { "title": "Projects" },
         { "title": "Contact" }
     ],
-    "projects": [
-
-    ],
-    "people": [
-        {
-            "id": "saray-chhambbat",
-            "name":"Saray Chhambbat",
-            "title": "Head of Communications"
-        },
-        {
-            "id": "saray-chhambbat",
-            "name":"Saray Chhambbat",
-            "title": "Head of Communications"
-        }
-    ],
     "slides": [
         {
             "reference":"About",
@@ -95,7 +80,79 @@
         {
             "reference":"About",
             "component": "about/bt-people",
-            "title": "Meet the pandas"
+            "title": "Meet the pandas",
+            "list": [
+                {
+                    "id": "guillermo-olivo",
+                    "name":"Guillermo Olivo",
+                    "title": "Head of Operations"
+                },
+                {
+                    "id": "andres-torres",
+                    "name":"Andres Torres",
+                    "title": "Head of Creative"
+                },
+                {
+                    "id": "karina-rosendo",
+                    "name":"Karina Rosendo",
+                    "title": "General Producer"
+                },
+                {
+                    "id": "juan-manuel-garcia",
+                    "name":"Juan Manuel Garcia",
+                    "title": "Creative Director"
+                },
+                {
+                    "id": "arthur-beyer",
+                    "name":"Arthur Beyer",
+                    "title": "Audio Engineer & Field Operator"
+                },
+                {
+                    "id": "dennys-loayza",
+                    "name":"Dennys Loayza",
+                    "title": "Communications Manager"
+                },
+                {
+                    "id": "francisco-salazar",
+                    "name":"Francisco Salazar",
+                    "title": "Director"
+                },
+                {
+                    "id": "jose-cuesta",
+                    "name":"Jose Cuesta",
+                    "title": "Video Editor"
+                },
+                {
+                    "id": "leka-vega",
+                    "name":"Leka Vega",
+                    "title": "Video Editor"
+                },
+                {
+                    "id": "luis-castaneda",
+                    "name":"Luis Castaneda",
+                    "title": "VFX Compositor/Colorist"
+                },
+                {
+                    "id": "maria-andreina-flores",
+                    "name":"Maria Andreina Flores",
+                    "title": "Coomunications Coordinator"
+                },
+                {
+                    "id": "maria-andreina-flores",
+                    "name":"Maria Andreina Flores",
+                    "title": "Coomunications Coordinator"
+                },
+                {
+                    "id": "priscilla-morales",
+                    "name":"Priscilla Morales",
+                    "title": "Production Coordinator"
+                },
+                {
+                    "id": "sean-hickey",
+                    "name":"Sean Hickey",
+                    "title": "Director of Photography"
+                }
+            ]
         },
         {
             "reference":"Contact",

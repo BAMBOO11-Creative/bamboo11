@@ -1,3 +1,118 @@
 .bt-people {
 
+    .container {
+
+        .content {
+
+            //width: 100%;
+            //display: inline-block;
+
+            .header {
+                float: left;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .list {
+
+                float: left;
+                display: inline-block;
+                width: calc(100% + 1em);
+                margin-left: -0.5em;
+                margin-right: -0.5em;
+                margin-top: 2em;
+
+                @include mobile {
+                    margin-top: 1em;
+                }
+
+                .item {
+
+                    vertical-align: top;
+                    width: 19.7%;
+                    display: inline-block;
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                    margin-top: 2em;
+                    text-align: center;
+
+                    .image {
+
+                        position: relative;
+                        width: 6em;
+                        height: 6em;
+                        margin-bottom: 1.5em;
+                        max-width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include mobile {
+                            margin-bottom: 1em;
+                            width: 4em;
+                            height: 4em;
+
+                        }
+
+                        .jpg, .gif {
+                            border-radius: 100%;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        .gif {
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                    }
+
+                    h3 {
+                        font-size: 1.15em;
+                        @include mobile {
+                            font-size: 0.875em;
+                        }
+                    }
+
+                    p {
+                        font-size: 0.875em;
+                        @include mobile {
+                            font-size: 0.675em;
+                        }
+                    }
+
+                    @include mobile {
+            			width: 49%;
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                        margin-top: 1.5em;
+            		}
+
+                    h3 + p {
+                        margin-top: 0.25em;
+                    }
+
+                }
+
+                .item:hover {
+
+                    .image {
+
+                        .gif {
+                            opacity: 1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
 }

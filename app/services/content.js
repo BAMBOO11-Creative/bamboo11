@@ -34,10 +34,6 @@ export default Service.extend({
 
         }));
 
-        this.set('projects', data.projects);
-
-        this.set('people', data.people);
-        
         this.set('slides', data.slides);
 
         return data;

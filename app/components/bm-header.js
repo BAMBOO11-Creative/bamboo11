@@ -9,7 +9,13 @@ export default Component.extend({
 
         navigate(item) {
 
-            item.set('active', true);
+            if ( this.get('selectedItem') ) {
+
+                this.set('selectedItem.active', false);
+
+                item.set('active', true);
+
+            }
 
         }
 

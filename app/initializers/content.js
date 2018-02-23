@@ -8,6 +8,7 @@ export function initialize() {
 
     app.inject('route', 'content', 'service:content');
     app.inject('component', 'content', 'service:content');
+	app.inject('controller', 'contentservice', 'service:content');
 
 }
 

@@ -1,13 +1,25 @@
 {{head-layout}}
 
-{{bm-header}}
+{{log contentservice.modal}}
 
-{{#each content.slides as |slide|}}
+{{#if contentservice.modal}}
 
-    {{#if slide.component}}
+    {{outlet}}
 
-        {{component slide.component model=slide}}
+{{else}}
 
-    {{/if}}
+    {{bm-header}}
 
-{{/each}}
+    {{home/hm-home open='openModal'}}
+
+    {{#each content.slides as |slide|}}
+
+        {{#if slide.component}}
+
+            {{component slide.component model=slide}}
+
+        {{/if}}
+
+    {{/each}}
+
+{{/if}}

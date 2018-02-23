@@ -22,6 +22,19 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: all 10s ease-out;
+        }
+
+    }
+
+    &.visible {
+
+        .background {
+
+            img {
+                transform: scale(1.05);
+            }
+
         }
 
     }
@@ -55,8 +68,9 @@
 
             align-self: center;
 
-            h2 {
-
+            h2, p {
+                float: left;
+                width: 100%;
             }
 
             p {
@@ -67,6 +81,32 @@
 
             h2 + p {
                 margin-top: 1em;
+            }
+
+            .bar {
+
+                display: inline-block;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                width: calc(100vw / 2 - 8em);
+                overflow: hidden;
+                float: left;
+
+                @include tablet {
+                    width: calc(100vw - 6rem);
+        		}
+
+                @include mobile {
+                    width: calc(100vw - 3.5rem);
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    margin-left: -3.5rem;
+        		}
+
+                img {
+                    float: right;
+                }
+
             }
 
             button {

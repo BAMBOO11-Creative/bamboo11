@@ -4,6 +4,7 @@ import fetch from 'fetch';
 import { inject } from '@ember/service';
 import ArrayProxy from '@ember/array/proxy';
 import Object from '@ember/object';
+import { computed } from '@ember/object';
 
 export default Service.extend({
 
@@ -11,7 +12,7 @@ export default Service.extend({
 
     //
 
-    endpoint: Ember.computed(function() {
+    endpoint: computed(function() {
         return config.APP.endpoint;
     }),
 
@@ -20,6 +21,8 @@ export default Service.extend({
     async model() {
 
         const data = await this.load('content.json');
+
+        this.set('video', data.video);
 
         this.set('html', data.html);
 
@@ -32,7 +35,9 @@ export default Service.extend({
         }));
 
         this.set('projects', data.projects);
+
         this.set('people', data.people);
+        
         this.set('slides', data.slides);
 
         return data;

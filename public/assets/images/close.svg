@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1524.000000, -42.000000)">
+        <g id="close" transform="translate(1524.000000, 42.000000)">
+            <circle id="Oval-3" fill="#000000" cx="48" cy="48" r="48"></circle>
+            <g id="Group-5" transform="translate(48.000000, 48.000000) rotate(-315.000000) translate(-48.000000, -48.000000) translate(23.000000, 23.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-12" x="0" y="22" width="50" height="6"></rect>
+                <rect id="Rectangle-12" x="22" y="0" width="6" height="50"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

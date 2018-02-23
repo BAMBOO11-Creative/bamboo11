@@ -8,10 +8,26 @@ export default Route.extend({
 
     },
 
-	title(tokens) {
+	title() {
 
         return this.content.get('html.title') + " - " + this.content.get('html.tagline');
 
 	},
+
+    actions: {
+
+        openModal(video) {
+
+            this.transitionTo('video', video);
+
+        },
+
+        closeModal() {
+
+            this.transitionTo('application');
+
+        },
+
+    },
 
 });

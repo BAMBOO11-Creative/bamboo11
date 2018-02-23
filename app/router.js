@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+
+    this.route('video', { path: ':video' });
+
 });
 
 export default Router;

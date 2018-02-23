@@ -1,0 +1,25 @@
+{{#if media.isMobile}}
+
+    <div class="background">
+        <img src="{{content.endpoint}}images/home-desktop.jpg">
+    </div>
+
+{{else}}
+
+    <div class="background">
+        <video loop autoplay poster="{{content.endpoint}}images/home-desktop.jpg">
+            <source src="{{content.endpoint}}videos/home.mp4" type="video/mp4">
+        </video>
+    </div>
+
+{{/if}}
+
+<div class="container">
+
+    <svg {{action 'open'}} width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-790.000000, -463.000000)">
+            <path d="M840,563 C812.385763,563 790,540.614237 790,513 C790,485.385763 812.385763,463 840,463 C867.614237,463 890,485.385763 890,513 C890,540.614237 867.614237,563 840,563 Z M832.533571,532.039668 L855.006097,513.5 L832.533571,494.960332 L832.533571,532.039668 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </svg>
+
+</div>

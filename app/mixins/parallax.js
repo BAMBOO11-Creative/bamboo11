@@ -26,6 +26,12 @@ export default Mixin.create({
         var isInView = this.isElementVisible(this.get('element'));
         this.set('isInView', isInView);
 
+        this.onInView(isInView);
+
+    },
+
+    onInView(isInView) {
+
     },
 
     isSupportsPassive() {

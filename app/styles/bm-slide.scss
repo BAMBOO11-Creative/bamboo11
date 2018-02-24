@@ -27,18 +27,6 @@
 
     }
 
-    &.visible {
-
-        .background {
-
-            img {
-                transform: scale(1.05);
-            }
-
-        }
-
-    }
-
     .container {
 
         display: flex;
@@ -67,11 +55,24 @@
         .content {
 
             align-self: center;
+            transition: all 0.5s ease-out;
+            transform: translateX(-0.5em);
 
             h2, p {
                 float: left;
                 width: 100%;
+                opacity: 0;
             }
+
+            h2 {
+                transition: all 0.3s ease-out;
+            }
+
+            p {
+                transition: all 0.3s ease-out;
+                transition-delay: 0.1s;
+            }
+
 
             p {
                 @include mobile {
@@ -85,6 +86,10 @@
 
             .bar {
 
+                opacity: 0;
+                transition: all 0.3s ease-out;
+                transition-delay: 0.1s;
+                transform: translateX(-1em);
                 display: inline-block;
                 margin-top: 1em;
                 margin-bottom: 1em;
@@ -132,6 +137,41 @@
             button:hover {
                 color: black;
                 background: white;
+            }
+
+        }
+
+    }
+
+    &.visible {
+
+        .background {
+
+            img {
+                transform: scale(1.05);
+            }
+
+        }
+
+        .container {
+
+            .content {
+
+                transform: translateX(0%);
+
+                h2 {
+                    opacity: 1;
+                }
+
+                p {
+                    opacity: 1;
+                }
+
+                .bar {
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+
             }
 
         }

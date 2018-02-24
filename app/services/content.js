@@ -18,6 +18,25 @@ export default Service.extend({
 
     //
 
+    navigate(link) {
+
+        const id = this.getID(link);
+
+        const component = this.get(id);
+        const element = component.get('element');
+
+        $('html, body').animate({
+            scrollTop: $(element).offset().top
+        }, 1000);
+
+    },
+
+    getID(id) {
+        return id.split('/').join('-');
+    },
+
+    //
+
     async model() {
 
         const data = await this.load('content.json');

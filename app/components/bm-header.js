@@ -9,6 +9,8 @@ export default Component.extend({
 
         navigate(item) {
 
+            this.content.navigate(item.link);
+
             //if ( this.get('selectedItem') ) {
             //    this.set('selectedItem.active', false);
             //}
@@ -16,14 +18,14 @@ export default Component.extend({
             //item.set('active', true);
             //this.set('selectedItem', item);
 
-            const id = this.getID(item.link);
+            //const id = this.getID(item.link);
 
-            const component = this.content.get(id);
-            const element = component.get('element');
+            //const component = this.content.get(id);
+            //const element = component.get('element');
 
-            $('html, body').animate({
-                scrollTop: $(element).offset().top
-            }, 1000);
+            //$('html, body').animate({
+            //    scrollTop: $(element).offset().top
+            //}, 1000);
 
         }
 

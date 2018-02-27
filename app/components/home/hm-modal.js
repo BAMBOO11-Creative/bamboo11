@@ -17,8 +17,22 @@ export default Component.extend({
 
             this.sendAction('close');
 
-        }
+            if ( this.get('content.video') === this.get('video') ) {
 
-    }
+                var slide = this.get('content.slides.firstObject.component');
+
+                var self = this;
+                Ember.run.later(function() {
+
+                    self.get('content').navigate(slide);
+
+                }, 500);
+
+            }
+
+        },
+
+    },
+
 
 });

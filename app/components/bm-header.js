@@ -1,8 +1,10 @@
 import Component from '@ember/component';
+import Parallax from './../mixins/parallax';
 
-export default Component.extend({
+export default Component.extend(Parallax, {
 
     classNames: ['bm-header'],
+    classNameBindings: ['adaptive'],
     tagName: 'header',
 
     actions: {
@@ -11,6 +13,20 @@ export default Component.extend({
 
             this.content.navigate(item.link);
 
+        }
+
+    },
+
+    parallaxHandler() {
+
+        let windowHeight = ( window.innerHeight || document.documentElement.clientHeight );
+
+        let scrollTop = $(window).scrollTop();
+
+        if ( scrollTop > windowHeight ) {
+            this.set('adaptive', true);
+        } else {
+            this.set('adaptive', false);
         }
 
     },

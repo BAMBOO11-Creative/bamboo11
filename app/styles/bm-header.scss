@@ -24,16 +24,29 @@
             display: none;
         }
 
-        img {
+        img, svg {
+
             float: left;
+            width: 3.5rem;
+            height: auto;
 
             @include mobile {
-                width: 1.5rem;
+                width: 2rem;
                 height: auto;
         	}
 
         }
 
+        svg {
+            g {
+                g {
+                    #content {
+                        transition: all 0.3s ease-out;
+                    }
+                }
+            }
+        }
+        
     }
 
 
@@ -94,6 +107,27 @@
 
                     width: 100%;
 
+                }
+
+            }
+
+        }
+
+    }
+
+    &.adaptive {
+
+        .logo {
+
+            svg {
+
+                g {
+                    g {
+                        #content {
+                            opacity: 0;
+                            transform: translateY(-100%);
+                        }
+                    }
                 }
 
             }

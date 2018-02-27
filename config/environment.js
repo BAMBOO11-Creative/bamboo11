@@ -32,7 +32,7 @@ module.exports = function(environment) {
 
      if (environment === 'production') {
 
-          ENV.APP.endpoint = "https://bamboo11.com/assets/content/";
+          ENV.APP.endpoint = "://bamboo11.com/assets/content/";
 
      }
 

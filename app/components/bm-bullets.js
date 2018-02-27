@@ -2,14 +2,13 @@ import Component from '@ember/component';
 
 export default Component.extend({
 
-    classNames: ['bm-header'],
-    tagName: 'header',
+    classNames: ['bm-bullets'],
 
     actions: {
 
         navigate(item) {
 
-            this.content.navigate(item.link);
+            this.content.navigate(item.component);
 
         }
 
@@ -21,10 +20,10 @@ export default Component.extend({
 
         let id = this.get('content.isInView.model.component');
 
-        const list = this.get('content.navigation');
+        const list = this.get('content.slides');
 
         const item = list.find(function(item) {
-            if ( item.link === id ) {
+            if ( item.component === id ) {
                 return true;
             } else {
                 return false;

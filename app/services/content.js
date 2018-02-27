@@ -53,7 +53,13 @@ export default Service.extend({
 
         }));
 
-        this.set('slides', data.slides);
+        this.set('slides', ArrayProxy.create({ content:
+
+            data.slides.map(function(object) {
+                return Object.create(object);
+            })
+
+        }));
 
         return data;
 

@@ -7,7 +7,7 @@
         "keywords": ""
     },
     "navigation": [
-        { "title": "About", "link": "about/bt-content" },
+        { "title": "About", "link": "about/bt-people" },
         { "title": "Services", "link": "services/sr-services" },
         { "title": "Projects", "link": "work/wr-work" },
         { "title": "Contact", "link": "contact/ct-contact" }
@@ -73,6 +73,7 @@
         {
             "component": "about/bt-people",
             "title": "Meet the pandas",
+            "description": "What keeps us strong, create and motivated? Bamboo of course!",
             "list": [
                 {
                     "id": "guillermo-olivo",
@@ -127,7 +128,7 @@
                 {
                     "id": "maria-andreina-flores",
                     "name":"Maria Andreina Flores",
-                    "title": "Coomunications Coordinator"
+                    "title": "Communications Coordinator"
                 },
                 {
                     "id": "priscilla-morales",
@@ -143,7 +144,7 @@
         },
         {
             "component": "contact/ct-contact",
-            "title": "Ready foraction?",
+            "title": "Ready for action?",
             "description": "Drop us a line,<br> We are ready when you are!",
             "email": {
                 "title": "Email Us",

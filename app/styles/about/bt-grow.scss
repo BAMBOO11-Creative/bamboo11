@@ -10,4 +10,23 @@
 
     }
 
+    .container {
+
+        .content {
+
+            .bar {
+                float: left;
+                clear: both;
+            }
+
+            button {
+                float: left;
+                clear: both;
+                margin-top: 0.5em;
+            }
+
+        }
+
+    }
+
 }

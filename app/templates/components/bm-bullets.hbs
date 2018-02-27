@@ -1,0 +1,7 @@
+{{#each content.slides as |item|}}
+
+    <div class="item" {{action 'navigate' item}} active={{item.active}}>
+        <div class="circle"></div>
+    </div>
+
+{{/each}}

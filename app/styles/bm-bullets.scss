@@ -1,0 +1,54 @@
+.bm-bullets {
+
+    display: inline-block;
+    position: fixed;
+    right: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+
+    @include mobile {
+        right: 0.6rem;
+	}
+
+    .item {
+
+        display: inline-block;
+        float: left;
+        clear: both;
+        padding: 0.25em;
+
+        @include mobile {
+            padding: 0.4rem;
+        }
+
+        .circle {
+
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 100%;
+            opacity: 0.5;
+            float: left;
+            transition: all 0.2s ease-out;
+
+            @include mobile {
+                width: 6px;
+                height: 6px;
+        	}
+
+        }
+
+        &[active], &:hover {
+
+            .circle {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+
+        }
+
+    }
+
+}

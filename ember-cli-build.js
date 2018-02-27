@@ -11,7 +11,7 @@ module.exports = function(defaults) {
         },
 
         fingerprint: {
-            exclude: ['content/images', 'favicons'],
+            exclude: ['content/images', 'favicons/'],
         },
 
         'ember-cli-babel': {

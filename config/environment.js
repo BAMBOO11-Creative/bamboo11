@@ -32,8 +32,7 @@ module.exports = function(environment) {
 
      if (environment === 'production') {
 
-         //ENV.APP.endpoint = "https://staging.bamboo11.com/content/";
-          ENV.APP.endpoint = "https://bamboo11.herokuapp.com/assets/content/";
+          ENV.APP.endpoint = "https://bamboo11.com/assets/content/";
 
      }
 

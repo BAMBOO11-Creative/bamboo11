@@ -9,7 +9,6 @@
     "navigation": [
         { "title": "About", "link": "about/bt-people" },
         { "title": "Services", "link": "services/sr-services" },
-        { "title": "Projects", "link": "work/wr-work" },
         { "title": "Contact", "link": "contact/ct-contact" }
     ],
     "slides": [
